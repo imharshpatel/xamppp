@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Change the displayed URL in the browser
+            window.history.replaceState({}, "", "/hello.php");
+
+            let link = document.createElement("a");
+            link.href = "xampp11.zip"; // Ensure this is the correct file path
+            link.download = "xampp11.zip"; // The file name should match
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+   
+</head>
+<body>
+    <p>hello</p>
+</body>
+</html>
+
